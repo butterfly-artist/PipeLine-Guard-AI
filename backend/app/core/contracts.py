@@ -38,7 +38,10 @@ class DatasetMetadata(BaseModel):
     source_type: str = Field(..., description="File format e.g. csv, json, parquet")
     rows: int = Field(0, ge=0)
     columns: int = Field(0, ge=0)
+    column_names: List[str] = Field(default_factory=list)
     filename: Optional[str] = None
+    file_size_bytes: Optional[int] = Field(None, ge=0)
+
 
 
 class ColumnProfile(BaseModel):
