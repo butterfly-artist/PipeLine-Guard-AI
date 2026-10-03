@@ -1,0 +1,5 @@
+transaction_id,customer_email,amount,status,created_at
+TXN-1001,customer1@example.com,150.00,COMPLETED,2026-10-01
+TXN-1002,customer2@example.com,-25.00,PENDING,2026-10-02
+TXN-1003,invalid-email-format,99.99,FAILED,2026-10-03
+TXN-1004,customer4@example.com,500.50,COMPLETED,2026-10-04

@@ -286,6 +286,32 @@ Detailed project specifications can be found in the [`docs/`](docs/) directory:
 
 ---
 
-## 13. License
+## 13. Hackathon Quickstart
+
+### 1. Run Backend (FastAPI)
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+```
+
+### 2. Run Frontend (React + Vite)
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### 3. Run Automated Tests
+```bash
+python -m pytest backend/tests
+```
+
+### 4. Interactive Live Demo
+Click **⚡ Run CartFlow Demo** on the frontend UI or execute `GET http://localhost:8000/api/demo`.
+
+---
+
+## 14. License
 
 This project is open-source and released under the [MIT License](LICENSE).
